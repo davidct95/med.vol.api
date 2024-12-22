@@ -30,6 +30,7 @@ public class Paciente {
 
     public Paciente(@Valid DatosRegistroPaciente datos) {
 
+        this.activo = true;
         this.nombre = datos.nombre();
         this.email = datos.email();
         this.documentoIdentidad = datos.documentIdentidad();
